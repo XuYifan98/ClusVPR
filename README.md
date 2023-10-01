@@ -1,7 +1,21 @@
 # ClusVPR for Visual Place Recognition
 
+![image](https://github.com/XuYifan98/ClusVPR/blob/main/figs/VPR_Task.png)
+
 ## Introduction
 This is a PyTorch implementation for our TMM paper "ClusVPR: Efficient Visual Place Recognition ... ". It is an open-source codebase for visual place recognition.
+
+This pipeline is for the network of VGG-16 + our ClusVPR, trained on Pitts30k dataset. The dimension of the global descriptor is 4096.
+
+![image](https://github.com/XuYifan98/ClusVPR/blob/main/figs/cwtvlad_quantitative_results.png)
+
+From the above table, we can see that our model outperforms other baseline models on most of the benchmarks with lower complexity. You can get some ideas of why our trained networks perform better from the following figure:
+
+![image](https://github.com/XuYifan98/ClusVPR/blob/main/figs/cwtvlad_qualitative_results.png)
+
+As can be seen, our model focuses on discriminative regions (e.g. buildings, signs), while the other two models falsely focus on dynamic objects or obstacles (e.g.
+pedestrians, cars, trees and light).
+
 
 ## Installation
 We test this repo with Python 3.8, PyTorch 1.9.0, and CUDA 11.1. However, it should be runnable with recent PyTorch versions (Pytorch >= 1.1.0).
@@ -12,8 +26,6 @@ In addition, need to install KNN_CUDA from wheel.
 ```shell
 pip install --upgrade https://github.com/unlimblue/KNN_CUDA/releases/download/0.2/KNN_CUDA-0.2-py3-none-any.whl
 ```
-
-This pipeline is for the network of VGG-16 + our ClusVPR, trained on Pitts30k dataset. The dimension of the global descriptor is 4096.
 
 ## Preparation
 ### Datasets
