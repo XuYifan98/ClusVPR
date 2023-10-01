@@ -7,11 +7,11 @@ This is a PyTorch implementation for our TMM paper "ClusVPR: Efficient Visual Pl
 
 This pipeline is for the network of VGG-16 + our ClusVPR, trained on Pitts30k dataset. The dimension of the global descriptor is 4096.
 
-![image](https://github.com/XuYifan98/ClusVPR/blob/main/figs/cwtvlad_quantitative_results.png)
+![image](https://github.com/XuYifan98/ClusVPR/blob/main/figs/clusvpr_quantitative_results.png)
 
 From the above table, we can see that our model outperforms other baseline models on most of the benchmarks with lower complexity. You can get some ideas of why our trained networks perform better from the following figure:
 
-![image](https://github.com/XuYifan98/ClusVPR/blob/main/figs/cwtvlad_qualitative_results.png)
+![image](https://github.com/XuYifan98/ClusVPR/blob/main/figs/clusvpr_qualitative_results.png)
 
 As can be seen, our model focuses on discriminative regions (e.g. buildings, signs), while the other two models falsely focus on dynamic objects or obstacles (e.g.
 pedestrians, cars, trees and light).
