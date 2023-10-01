@@ -1,7 +1,7 @@
 # ClusVPR for Visual Place Recognition
 
 ## Introduction
-This is a PyTorch implementation for our AAAI 2024 paper "ClusVPR: Efficient Visual Place Recognition with Clustering-based Weighted Transformer". It is an open-source codebase for visual place recognition.
+This is a PyTorch implementation for our TMM paper "ClusVPR: Efficient Visual Place Recognition ... ". It is an open-source codebase for visual place recognition.
 
 ## Installation
 We test this repo with Python 3.8, PyTorch 1.9.0, and CUDA 11.1. However, it should be runnable with recent PyTorch versions (Pytorch >= 1.1.0).
