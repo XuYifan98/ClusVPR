@@ -3,7 +3,7 @@
 ![image](https://github.com/XuYifan98/ClusVPR/blob/main/figs/VPR_Task.png)
 
 ## Introduction
-This is a PyTorch implementation for our TMM paper "ClusVPR: Efficient Visual Place Recognition ... ". It is an open-source codebase for visual place recognition.
+This is a PyTorch implementation for our paper "ClusVPR: Efficient Visual Place Recognition ... ". It is an open-source codebase for visual place recognition.
 
 This pipeline is for the network of VGG-16 + our ClusVPR, trained on Pitts30k dataset. The dimension of the global descriptor is 4096.
 
